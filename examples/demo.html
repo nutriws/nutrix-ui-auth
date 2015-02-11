@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <!--[if lt IE 9]>
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <![endif]-->
+        <script src="js/angular.min.js"></script>
+        <script src="js/nutrix-ui-auth-demo.js"></script>
+        <script src="../dist/nutrix-ui-auth.js"></script>
+        <link rel="stylesheet" href="../dist/nutrix-ui-auth.css">
+    </head>
+    <body ng-app="nutrixUiAuthDemo">
+        <h1>Nutrix UI Authentication</h1>
+
+        <div ng-controller="nutrixUiAuthDemo">
+            <nutrix-ui-auth records="invoice"></nutrix-ui-auth>
+            <nutrix-ui-auth-login records="invoice"></nutrix-ui-auth-login>
+        </div>
+    </body>
+</html>
